@@ -7,36 +7,27 @@ public class Aluno {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private Integer matricula;
     private String nomeCompleto;
     private String cpf;
+    private String curso;
+    private Integer matricula;
 
     @ManyToOne
     @JoinColumn(name = "endereco_id")
     private Endereco endereco;
 
-    private String curso;
-
     // Getters and Setters
 
     public Integer getId() {
-        return this.id;
+        return id;
     }
 
     public void setId(Integer id) {
         this.id = id;
     }
 
-    public String getMatricula() {
-        return this.matricula;
-    }
-
-    public void setMatricula(String matricula) {
-        this.matricula = matricula;
-    }
-
     public String getNomeCompleto() {
-        return this.nomeCompleto;
+        return nomeCompleto;
     }
 
     public void setNomeCompleto(String nomeCompleto) {
@@ -44,10 +35,34 @@ public class Aluno {
     }
 
     public String getCpf() {
-        return this.cpf;
+        return cpf;
     }
 
     public void setCpf(String cpf) {
         this.cpf = cpf;
+    }
+
+    public String getCurso() {
+        return curso;
+    }
+
+    public void setCurso(String curso) {
+        this.curso = curso;
+    }
+
+    public Integer getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(Integer matricula) {
+        this.matricula = matricula;
+    }
+
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
     }
 }

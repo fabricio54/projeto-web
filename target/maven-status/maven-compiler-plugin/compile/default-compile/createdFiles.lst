@@ -6,6 +6,7 @@ com\avaliacao\demo\service\EnderecoService.class
 com\avaliacao\demo\model\Endereco.class
 com\avaliacao\demo\repository\AvaliacaoRepository.class
 com\avaliacao\demo\AvaliacaoApplication.class
+com\avaliacao\demo\controller\EnderecoController.class
 com\avaliacao\demo\repository\ComponenteRepository.class
 com\avaliacao\demo\repository\EnderecoRepository.class
 com\avaliacao\demo\repository\AlunoRepository.class
